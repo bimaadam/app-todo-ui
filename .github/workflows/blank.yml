@@ -29,4 +29,4 @@ jobs:
           tag_name: v1.0.0 # Pastikan tag ini sudah ada di GitHub
           files: build/app/outputs/flutter-apk/app-release.apk
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PAT_GITHUB }}
