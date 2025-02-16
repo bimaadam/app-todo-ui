@@ -25,7 +25,8 @@ jobs:
 
       - name: Upload APK ke GitHub Releases
         uses: softprops/action-gh-release@v1
-        with:
-          files: build/app/outputs/flutter-apk/app-release.apk
+      - with:
+            tag_name: v1.0.0
+            files: build/app/outputs/flutter-apk/app-release.apk
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
